@@ -52,8 +52,87 @@ justify-content: space-around;
 
 .centered {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 100px ;
+    text-wrap: nowrap;
+    font-weight: bolder;
+}
+
+.centered-staggered {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 50px ;
+    text-wrap: nowrap;
+}
+
+.stock-img-centered {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.s-img2 {
+    width: 50%;
+    height: fit-content;
+    margin: 10px;
+}
+
+.fit-img {
+    /* width: 50%; */
+    height: 480px;
+}
+
+.h3-spacing {
+    margin-left: 25px;
+}
+
+.p-text-content {
+    margin-left: 25px;
+    color: rgb(126, 124, 124);
+    font-weight: normal;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    /* flex-direction: row; */
+    /* display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    justify-content: space-evenly;
+    grid-template-rows: auto;
+    align-items: center;
+    align-content: center; */
+}
+
+
+.row {
+    @include 
+    /* margin: 10px; */
+    /* background-color: aliceblue !important;
+    margin: 10px; */
+    /* button-group-stack($selector); */
+}
+
+.footer-link-positions {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+.footer-links {
+    margin-right: 10px;
     color: black;
 }
