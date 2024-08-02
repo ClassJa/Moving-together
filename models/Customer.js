@@ -27,6 +27,10 @@ Customer.init(
       isEmail: true,
     },
   },
+  zipcode: {
+    type: DataTypes.INTEGER,
+    allowNull: true,
+  },
 },
 {
   sequelize,
