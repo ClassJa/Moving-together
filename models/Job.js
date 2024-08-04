@@ -35,11 +35,11 @@ Job.init(
     allowNull: false,
   },
   job_status: {
-    type: DataTypes.BOOL,
+    type: DataTypes.BOOLEAN,
     allowNull: false,
   },
   payment_status: {
-    type: DataTypes.BOOL,
+    type: DataTypes.BOOLEAN,
     allowNull: false,
   },
 },

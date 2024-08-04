@@ -5,43 +5,27 @@ class Compensation extends Model {}
 
 Compensation.init(
   {
-  job_id: {
+  comp_id: {
     type: DataTypes.INTEGER,
     allowNull: false,
     primaryKey: true,
     autoIncrement: true,
   },
-  job_type: {
-    type: DataTypes.CHAR,
-    allowNull: false,
-  },
-  worker_id: {
+worker_id: {
     type: DataTypes.INTEGER,
-  },
-  number_workers: {
+},
+job_id: {
     type: DataTypes.INTEGER,
     allowNull: false,
-  },
-  cost_per_worker: {
+},
+compensation: {
     type: DataTypes.INTEGER,
     allowNull: false,
-  },
-  zipcode: {
-    type: DataTypes.INTEGER,
-    allowNull: true,
-  },
-  customer_id: {
-    type: DataTypes.INTEGER,
+},
+payment_status: {
+        type: DataTypes.BOOLEAN,
     allowNull: false,
-  },
-  job_status: {
-    type: DataTypes.BOOL,
-    allowNull: false,
-  },
-  payment_status: {
-    type: DataTypes.BOOL,
-    allowNull: false,
-  },
+},
 },
 {
   sequelize,
