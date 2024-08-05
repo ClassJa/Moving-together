@@ -1,0 +1,46 @@
+{{!-- <div>
+    <h1>Home Page</h1>
+</div> --}}
+
+
+<body>
+    <section> 
+        <!-- how to go about stock images? without getting copyrighted -->
+        <img src="../asset/moving-stock-img.jpg" alt="Family in the process of moving">
+        <div class="centered"> Moving Together </div>
+        <div class="centered-staggered"> Let us help you move! </div>
+        <button class="sMoving">Start Moving!</button>
+    </section>
+
+    <section class="stock-img-centered">
+        <img class="s-img2" src="../asset/stock-img2.jpg" alt="Two people unloading a moving truck">
+        <img class="s-img2 fit-img" src="../asset/stock-img5.png" alt="A box, tape, and scissors on a table">
+    </section>
+
+    <section>
+        <h3 class="h3-spacing"> Hire Movers. </h3>
+        <p class="p-text-content"> Or earn money moving items! </p>
+    </section>
+
+    {{#each testimonials as |testimonial|}}
+        <section class="testimonial">
+            <section class="testimonial-ind">
+                <h3>
+                    Testimonial
+                </h3>
+                <p>
+                    This is a great service
+                </p>
+            </section>
+        </section>
+    {{/each}}
+       
+   
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+</body>
+   
+</html>
