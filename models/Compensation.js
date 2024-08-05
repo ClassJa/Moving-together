@@ -1,48 +1,48 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Customer extends Model {}
+class Compensation extends Model {}
 
-Customer.init(
+Compensation.init(
   {
-  customer_id: {
+  comp_id: {
     type: DataTypes.INTEGER,
     allowNull: false,
     primaryKey: true,
     autoIncrement: true,
   },
-  first_name: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
-  last_name: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
-  email: {
-    type: DataTypes.STRING,
-    allowNull: false,
-    unique: true,
-    validate: {
-      isEmail: true,
-    },
-  },
-  zipcode: {
+worker_id: {
     type: DataTypes.INTEGER,
+<<<<<<< HEAD:models/Compensation.js
+},
+job_id: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+},
+compensation: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+},
+payment_status: {
+        type: DataTypes.BOOLEAN,
+    allowNull: false,
+},
+=======
     allowNull: true,
   },
   worker: {
     type: DataTypes.BOOLEAN,
     allowNull: false,
   }
+>>>>>>> main:models/Customer.js
 },
 {
   sequelize,
   timestamps: false,
   freezeTableName: true,
   underscored: true,
-  modelName: 'customer',
+  modelName: 'compensation',
 }
 );
 
-module.exports = Customer;
+module.exports = Compensation;
