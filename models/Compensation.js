@@ -13,6 +13,7 @@ Compensation.init(
   },
 worker_id: {
     type: DataTypes.INTEGER,
+<<<<<<< HEAD:models/Compensation.js
 },
 job_id: {
     type: DataTypes.INTEGER,
@@ -26,6 +27,14 @@ payment_status: {
         type: DataTypes.BOOLEAN,
     allowNull: false,
 },
+=======
+    allowNull: true,
+  },
+  worker: {
+    type: DataTypes.BOOLEAN,
+    allowNull: false,
+  }
+>>>>>>> main:models/Customer.js
 },
 {
   sequelize,
