@@ -24,6 +24,17 @@ display: flex;
 align-self: center;
 align-items: center;
 justify-content: space-around;
+border: 1px solid black;
+}
+
+.sign-in:hover {
+    color: rgb(180, 180, 180);
+    background-color: black;
+}
+
+.sign-up:hover {
+    background-color: rgb(180, 180, 180);
+   
 }
 
 
@@ -38,6 +49,7 @@ display: flex;
 align-self: center;
 align-items: center;
 justify-content: space-around;
+border: 1px solid gray;
 }
 
 .sMoving {
