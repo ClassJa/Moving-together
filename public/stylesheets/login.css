@@ -65,7 +65,7 @@
     height: 30px;
     width: 110px;
     border-radius: 5px;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 .sMoving:hover {
@@ -168,6 +168,7 @@
 }
 
 .sMoving {
+
     
     -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 2.5s; /* Firefox < 16 */
