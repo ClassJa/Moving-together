@@ -168,9 +168,9 @@
 }
 
 .centered {
-        /* margin-top: 25px; */
         text-align: center;
-        /* border: 1px solid rgb(180, 180, 180); */
+        -webkit-text-stroke-color: rgb(180, 180, 180);
+        -webkit-text-stroke-width: .5px;
     
         -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
            -moz-animation: fadein 2.5s; /* Firefox < 16 */
@@ -209,9 +209,10 @@
     }
 
     .centered-staggered {
-        /* margin-top: 25px; */
         text-align: center;
-        /* border: 1px solid rgb(180, 180, 180); */
+        -webkit-text-stroke-color: rgb(180, 180, 180);
+        -webkit-text-stroke-width: .5px;
+        
     
         -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
            -moz-animation: fadein 2.5s; /* Firefox < 16 */
