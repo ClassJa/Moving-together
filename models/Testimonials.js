@@ -25,9 +25,6 @@ Testimonial.init(
     user_review: {
       type: DataTypes.TEXT,
       allowNull: false,
-      // validate: {
-      //   isAlphanumeric: true,
-      // }
     }
   },
   {
