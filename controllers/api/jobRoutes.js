@@ -2,7 +2,7 @@ const router = require('express').Router();
 // Import the Job model from the models folder
 const { Job } = require('../../models');
 
-
+//Get all Jobs
 router.get('/', async (req, res) => {
     try {
     const jobData = await Job.findAll();
