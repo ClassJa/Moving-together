@@ -9,7 +9,6 @@ router.get('/', async (req, res) => {
     res.render('homepage', {tData})
   
     
-    
   } catch (err) {
     res.status(500).json(err);
   }
