@@ -41,14 +41,13 @@ justify-content: space-around;
 }
 
 .sMoving {
-    position: relative;
-    top: 55%;
-    
+    position: absolute;
+    top: 60%;
+    left: 45%;
     background-color: white;
     color: black;
-    height: fit-content;
-    width: auto;
-    border-color: black 1px solid;
+    height: 30px;
+    width: 100px;
 }
 
 .clear-bg {
