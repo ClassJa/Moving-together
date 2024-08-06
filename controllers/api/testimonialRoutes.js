@@ -28,21 +28,27 @@ router.post('/', async (req, res) => {
             req.body,
             {
                 where: {
-                    id: req.params.id
+                    testimonial_id: req.params.id
             }
         },
+        // req.body
     )
     res.json(updatedTestimonial)
-    // res.json(updatedTestimonial)
 }
   catch (err) {
       res.status(400).json(err);
     }
   });
 
-  router.delete('/', async (req, res) => {
+  router.delete('/:id', async (req, res) => {
     try {
-      res.render('testimonials')
+        const deletedTestimonial = await Testimonial.destroy(
+            {
+                where: {
+                    testimonial_id: req.params.id
+                },
+            });
+        res.status(200).json(deletedTestimonial)
       
     } catch (err) {
       res.status(400).json(err);
