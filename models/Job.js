@@ -17,6 +17,10 @@ Job.init(
   },
   worker_id: {
     type: DataTypes.INTEGER,
+    references: {
+        model: "user",
+        key: "user_id"
+    },
   },
   number_workers: {
     type: DataTypes.INTEGER,
@@ -32,7 +36,11 @@ Job.init(
   },
   customer_id: {
     type: DataTypes.INTEGER,
-    allowNull: false,
+    allowNull: true,
+    references: {
+        model: "user",
+        key: "user_id"
+    },
   },
   job_status: {
     type: DataTypes.BOOLEAN,

@@ -31,6 +31,10 @@ User.init(
     type: DataTypes.INTEGER,
     allowNull: true,
   },
+  worker: {
+    type: DataTypes.BOOLEAN,
+    allowNull: false,
+  },
 },
 {
   sequelize,

@@ -4,7 +4,7 @@ const Compensation = require('./Job');
 
 // A Job belongs to a Customer
 Job.belongsTo(User, {
-  foreignKey: 'user_id'
+  foreignKey: 'customer_id'
 });
 
 // A Compensation is linked to a Job and Worker
@@ -24,7 +24,7 @@ Job.hasMany(Compensation, {
 
 // A Customer has many Jobs
 User.hasMany(Job, {
-  foreignKey: 'user_id'
+  foreignKey: 'customer_id'
 });
 
 module.exports = { User, Job, Compensation };
