@@ -6,7 +6,7 @@
 <body>
     <section> 
         <!-- how to go about stock images? without getting copyrighted -->
-        <img src="/asset/moving-stock-img.jpg" alt="Family in the process of moving">
+        <img class="main-img" src="/asset/moving-stock-img.jpg" alt="Family in the process of moving">
         <div class="centered"> Moving Together </div>
         <div class="centered-staggered"> Let us help you move! </div>
         <button class="sMoving">Start Moving!</button>
@@ -22,7 +22,7 @@
         <p class="p-text-content"> Or earn money moving items! </p>
     </section>
 
-    {{#each testimonials as |testimonial|}}
+    {{#each tData as |testimonial|}}
         <section class="testimonial">
             <section class="testimonial-ind">
                 <h3>

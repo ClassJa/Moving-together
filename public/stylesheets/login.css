@@ -7,6 +7,10 @@
     border-radius: 13px;
 
 }
+
+.main-img {
+    /* How to have it load sequentially? */
+}
 .tabs {
     display: flex;
     margin: 0;
@@ -38,9 +42,7 @@
 
 .sign-up:hover {
     background-color: rgb(180, 180, 180);
-   
 }
-
 
 .sign-up {
     background-color: black;
@@ -69,8 +71,14 @@
 }
 
 .sMoving:hover {
-    transform: scale(1.15);
+    transform: scale(1.115);
+    transition-duration: 1.1s;
     /* animation-duration: 5s; */
+}
+
+.sMoving:active {
+    color: rgb(163, 161, 161);
+    transition-duration: .5s;
 }
 
 .clear-bg {
@@ -174,7 +182,7 @@
     -moz-animation: fadein 2.5s; /* Firefox < 16 */
      -ms-animation: fadein 2.5s; /* Internet Explorer */
       -o-animation: fadein 2.5s; /* Opera < 12.1 */
-         animation: fadein 5.5s;
+         animation: fadein 3.5s;
 
 
 @keyframes fadein {
