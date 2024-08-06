@@ -47,7 +47,14 @@ justify-content: space-around;
     background-color: white;
     color: black;
     height: 30px;
-    width: 100px;
+    width: 110px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.sMoving:hover {
+    transform: scale(1.5);
+    /* animation-duration: 5s; */
 }
 
 .clear-bg {
