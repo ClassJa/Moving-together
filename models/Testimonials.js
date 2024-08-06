@@ -11,6 +11,13 @@ Testimonial.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    first_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        isAlpha: true,
+      }
+    },
     date_of_submission: {
       type: DataTypes.DATE,
       allowNull: false,
