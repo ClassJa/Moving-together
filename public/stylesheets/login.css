@@ -147,7 +147,7 @@
 
 .testimonial-ind {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     height: auto;
     width: auto;
     flex-direction: column;
