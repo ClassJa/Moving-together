@@ -24,6 +24,17 @@ display: flex;
 align-self: center;
 align-items: center;
 justify-content: space-around;
+border: 1px solid black;
+}
+
+.sign-in:hover {
+    color: rgb(180, 180, 180);
+    background-color: black;
+}
+
+.sign-up:hover {
+    background-color: rgb(180, 180, 180);
+   
 }
 
 
@@ -38,6 +49,7 @@ display: flex;
 align-self: center;
 align-items: center;
 justify-content: space-around;
+border: 1px solid gray;
 }
 
 .sMoving {
@@ -47,7 +59,14 @@ justify-content: space-around;
     background-color: white;
     color: black;
     height: 30px;
-    width: 100px;
+    width: 110px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.sMoving:hover {
+    transform: scale(1.15);
+    /* animation-duration: 5s; */
 }
 
 .clear-bg {
