@@ -4,10 +4,10 @@ const router = require('express').Router();
 const Testimonial = require('../../models/Testimonials');
 
 router.get('/', async (req, res) => {
-    console.log("Hit route")
   try {
-    console.log("Hit try")
-    res.render('testimonials')
+    const allTestimonials = Testimonial.findAll()
+    res.status(200).json(allTestimonials)
+    // res.render('testimonials')
   } catch (err) {
     res.status(400).json(err);
   }
