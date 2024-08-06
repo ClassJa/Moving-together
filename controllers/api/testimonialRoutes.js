@@ -1,22 +1,27 @@
 const router = require('express').Router();
 
-const {testimonial} = require('../../models')
+// const {testimonial} = require('../../models');
+const Testimonial = require('../../models/Testimonials');
 
 router.get('/', async (req, res) => {
+    console.log("Hit route")
   try {
+    console.log("Hit try")
     res.render('testimonials')
-    
   } catch (err) {
-    res.status(500).json(err);
+    res.status(400).json(err);
   }
 });
 
 router.post('/', async (req, res) => {
+    console.log("Hit route")
     try {
-      res.render('testimonials')
-      
+        console.log("Hit try")
+        const newTestimonial = await Testimonial.create(req.body)
+        console.log(newTestimonial)
+        res.json(newTestimonial)
     } catch (err) {
-      res.status(500).json(err);
+      res.status(400).json(err);
     }
   });
 
@@ -25,7 +30,7 @@ router.post('/', async (req, res) => {
       res.render('testimonials')
       
     } catch (err) {
-      res.status(500).json(err);
+      res.status(400).json(err);
     }
   });
 
@@ -34,8 +39,8 @@ router.post('/', async (req, res) => {
       res.render('testimonials')
       
     } catch (err) {
-      res.status(500).json(err);
+      res.status(400).json(err);
     }
   });
 
-module.exports = router
+module.exports = router;
