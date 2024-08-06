@@ -13,11 +13,19 @@ Compensation.init(
   },
 worker_id: {
     type: DataTypes.INTEGER,
-<<<<<<< HEAD:models/Compensation.js
+    references: {
+        model: "job",
+        key: "worker_id"
+    },
+
 },
 job_id: {
     type: DataTypes.INTEGER,
     allowNull: false,
+    references: {
+        model: "job",
+        key: "job_id"
+    },
 },
 compensation: {
     type: DataTypes.INTEGER,
@@ -27,14 +35,6 @@ payment_status: {
         type: DataTypes.BOOLEAN,
     allowNull: false,
 },
-=======
-    allowNull: true,
-  },
-  worker: {
-    type: DataTypes.BOOLEAN,
-    allowNull: false,
-  }
->>>>>>> main:models/Customer.js
 },
 {
   sequelize,
