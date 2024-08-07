@@ -5,7 +5,6 @@ const logout = async (event) => {
     });
     
     
-    
     if(response.ok){
         document.location.replace('login')
     }
