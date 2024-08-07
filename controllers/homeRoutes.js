@@ -1,6 +1,10 @@
 const Testimonial = require('../models/Testimonials');
 const Job = require('../models/Job')
 const router = require('express').Router();
+const {
+  lookupZip,
+  // distanceBetweenZips,
+} = require ('zipcode-detail-lookup');
 
 router.get('/', async (req, res) => {
   try {
@@ -23,10 +27,15 @@ router.get('/jobs', async (req, res) => {
       return;
   }
   // const job = jobData.get({ plain: true });
-  console.log(jobData)
-  res.render('jobs', { jobData });
+  const configJobData = jobData.map(job => {
+    const lookup = lookupZip(job.zipcode.toString()) || {}
+    console.log(lookup)
+    const location = lookup?.city && lookup?.stateAbbreviation ? `${lookup.city}, ${lookup.stateAbbreviation}` : ''
+    return {...job, location}
+  })
+  res.render('jobs', { configJobData });
   } catch (err) {
-      res.status(500).json(err);
+      res.status(500).json({ err, error: true });
   }
 });
 
