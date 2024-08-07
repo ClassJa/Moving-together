@@ -1,4 +1,5 @@
 const Testimonial = require('../models/Testimonials');
+const Job = require('../models/Job')
 const router = require('express').Router();
 
 router.get('/', async (req, res) => {
@@ -14,7 +15,7 @@ router.get('/', async (req, res) => {
 });
 
 //GET Jobs - Render Job Cards
-router.get('/', async (req, res) => {
+router.get('/jobs', async (req, res) => {
   try {
   const jobData = await Job.findAll({ raw: true });
   if (!jobData) {
@@ -22,7 +23,8 @@ router.get('/', async (req, res) => {
       return;
   }
   // const job = jobData.get({ plain: true });
-  res.render('job', job);
+  console.log(jobData)
+  res.render('jobs', { jobData });
   } catch (err) {
       res.status(500).json(err);
   }
