@@ -29,7 +29,6 @@ router.get('/jobs', async (req, res) => {
   // const job = jobData.get({ plain: true });
   const configJobData = jobData.map(job => {
     const lookup = lookupZip(job.zipcode.toString()) || {}
-    console.log(lookup)
     const location = lookup?.city && lookup?.stateAbbreviation ? `${lookup.city}, ${lookup.stateAbbreviation}` : ''
     return {...job, location}
   })
@@ -38,5 +37,15 @@ router.get('/jobs', async (req, res) => {
       res.status(500).json({ err, error: true });
   }
 });
+
+// add conditional if user is logged in
+router.get('/login', async (req, res) => {
+  res.render('login');
+})
+
+// add conditional if user is logged in
+router.get('/sign-up', async (req, res) => {
+  res.render('sign-up');
+})
 
 module.exports = router

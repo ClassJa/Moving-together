@@ -1,3 +1,4 @@
+console.log("Hi")
 const loginHandler = async (event) => {
     event.preventDefault();
 
@@ -19,4 +20,9 @@ const loginHandler = async (event) => {
     }
 };
 
-document.querySelector('.login').addEventListener('submit', loginHandler);
+// document.querySelector('.login').addEventListener('submit', loginHandler);
+document.querySelector('.sign-in').addEventListener('submit', {
+// form with class of sign in 
+  loginHandler
+});
+

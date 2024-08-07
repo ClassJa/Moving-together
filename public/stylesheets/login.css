@@ -11,6 +11,23 @@
 .main-img {
     /* How to have it load sequentially? */
 }
+
+.form-format {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    height: auto;
+    margin: 5px;
+}
+
+.submit-btn-styles {
+    border: 1px solid black;
+    width: auto;
+
+}
+
+
 .tabs {
     display: flex;
     margin: 0;
