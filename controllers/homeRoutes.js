@@ -29,7 +29,6 @@ router.get('/jobs', async (req, res) => {
   // const job = jobData.get({ plain: true });
   const configJobData = jobData.map(job => {
     const lookup = lookupZip(job.zipcode.toString()) || {}
-    console.log(lookup)
     const location = lookup?.city && lookup?.stateAbbreviation ? `${lookup.city}, ${lookup.stateAbbreviation}` : ''
     return {...job, location}
   })
