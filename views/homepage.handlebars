@@ -7,9 +7,14 @@
     <section> 
         <!-- how to go about stock images? without getting copyrighted -->
         <img class="main-img" src="/asset/moving-stock-img.jpg" alt="Family in the process of moving">
-        <div class="centered"> Moving Together </div>
+        <div class="eSpacing">
+            <div class="centered"> Moving Together </div>
+            <div class="centered-staggered"> Let us help you move! </div>
+            <button class="sMoving">Start Moving!</button>
+        </div>
+        {{!-- <div class="centered"> Moving Together </div>
         <div class="centered-staggered"> Let us help you move! </div>
-        <button class="sMoving">Start Moving!</button>
+        <button class="sMoving">Start Moving!</button> --}}
     </section>
 
     <section class="stock-img-centered">
@@ -22,18 +27,18 @@
         <p class="p-text-content"> Or earn money moving items! </p>
     </section>
 
+    <section class="testimonial">
     {{#each tData as |testimonial|}}
-        <section class="testimonial">
             <section class="testimonial-ind">
-                <h3>
+                <h3 class="tName">
                     {{testimonial.first_name}}
                 </h3>
                 <p>
                     {{testimonial.user_review}}
                 </p>
             </section>
-        </section>
     {{/each}}
+    </section>
        
    
 
