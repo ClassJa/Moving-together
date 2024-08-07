@@ -2,6 +2,7 @@ const router = require('express').Router();
 // Import the User model from the models folder
 const { User } = require('../../models');
 
+
 // If a POST request is made to /api/users, a new user is created. The user id and logged in state is saved to the session within the request object.
 router.post('/', async (req, res) => {
   try {
@@ -30,12 +31,12 @@ router.post('/login', async (req, res) => {
       return;
     }
 
+    
     const validPassword = await userData.checkPassword(req.body.password);
-
     if (!validPassword) {
       res
         .status(400)
-        .json({ message: 'Incorrect email or password, please try again' });
+        .json({ message: 'Incorrect password, please try again' });
       return;
     }
 
