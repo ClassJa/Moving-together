@@ -16,16 +16,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 200px;
-    height: auto;
+    width: 400px;
+    height: 500px;
     margin: 5px;
-}
-
-.submit-btn-styles {
     border: 1px solid black;
-    width: auto;
-
+    align-items: center;
+    position: relative;
+    top: 30px;
+    left: 40%;
+    border-radius: 5px;
 }
+
 
 
 .tabs {
@@ -185,6 +186,7 @@
     justify-content: center;
     border: 1px solid gray;
     align-content: center;
+    border-radius: 5px;
     padding: 15px;
 }
 
@@ -197,10 +199,17 @@
     /* button-group-stack($selector); */
 }
 
+.welcome-greeting {
+    color: rgb(180, 180, 180);
+
+}
+
 .footer-link-positions {
     display: flex;
     justify-content: flex-end;
     margin: 10px;
+    position: absolute;
+    bottom: 0px;
 }
 
 .footer-links {
@@ -331,3 +340,20 @@
         to   { opacity: 1; }
     }
 
+
+.submit-btn-styles {
+    border: 1px solid black;
+    width: auto;
+    width: 200px;
+
+}
+
+#email {
+    display: flex;
+    width: 200px;
+    justify-self: center;
+}
+
+#password {
+    width: 200px;
+}

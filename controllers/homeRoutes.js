@@ -44,8 +44,8 @@ router.get('/login', async (req, res) => {
 })
 
 // add conditional if user is logged in
-router.get('/sign-up', async (req, res) => {
-  res.render('sign-up');
+router.get('/signup', async (req, res) => {
+  res.render('signup');
 })
 
 module.exports = router
