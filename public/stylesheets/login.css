@@ -246,15 +246,18 @@
 
 .footer-link-positions {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin: 10px;
     position: absolute;
+    /* left: 0px; */
     bottom: 0px;
 }
 
 .footer-links {
     margin-right: 10px;
     color: rgb(102, 102, 103);
+    /* position: absolute;
+    bottom: 0px; */
 }
 
 .sMoving {
@@ -399,6 +402,20 @@
 }
 
 #password {
+    width: 200px;
+    border-radius: 2px;
+    margin-bottom: 2px;
+}
+
+#ret-email {
+    display: flex;
+    width: 200px;
+    justify-self: center;
+    border-radius: 2px;
+    margin-bottom: 2px;
+}
+
+#ret-password {
     width: 200px;
     border-radius: 2px;
     margin-bottom: 2px;
