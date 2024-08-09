@@ -1,5 +1,7 @@
 const Testimonial = require('../models/Testimonials');
 const Job = require('../models/Job')
+const {Compensation} = require('../models')
+
 const router = require('express').Router();
 const {
   lookupZip,
@@ -38,6 +40,13 @@ router.get('/jobs', async (req, res) => {
   }
 });
 
+router.get('/pricing', async (req, res) => {
+  try {
+    const compData = await Compensation.findAll({raw: true})
+    res.render('pricing', {compData})  } 
+    catch (error) {
+    
+  }
 // add conditional if user is logged in
 router.get('/login', async (req, res) => {
   res.render('login');
