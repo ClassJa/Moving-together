@@ -57,4 +57,8 @@ router.get('/signup', async (req, res) => {
   res.render('signup');
 })
 
+router.get('/createjob', async (req, res) => {
+  res.render('createjob');
+})
+
 module.exports = router

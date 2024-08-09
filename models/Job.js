@@ -45,10 +45,12 @@ Job.init(
   job_status: {
     type: DataTypes.BOOLEAN,
     allowNull: false,
+    defaultValue: false
   },
   payment_status: {
     type: DataTypes.BOOLEAN,
     allowNull: false,
+    defaultValue: false
   },
 },
 {
