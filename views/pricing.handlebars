@@ -1,3 +1,17 @@
-<body>
-  <h1>Testing</h1>
-</body>
+<h1>Pricing</h1>
+{{log compData}}
+{{#each compData}}
+  <section class="compensation">
+    <section class="compensation-ind">
+      <h3>
+        {{job_id}}
+      </h3>
+      <h4>
+        {{compensation}}
+      </h4>
+      <p>
+        {{payment_status}}
+      </p>
+    </section>
+  </section>
+{{/each}}

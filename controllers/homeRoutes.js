@@ -1,5 +1,7 @@
 const Testimonial = require('../models/Testimonials');
 const Job = require('../models/Job')
+const {Compensation} = require('../models')
+
 const router = require('express').Router();
 const {
   lookupZip,
@@ -29,7 +31,6 @@ router.get('/jobs', async (req, res) => {
   // const job = jobData.get({ plain: true });
   const configJobData = jobData.map(job => {
     const lookup = lookupZip(job.zipcode.toString()) || {}
-    console.log(lookup)
     const location = lookup?.city && lookup?.stateAbbreviation ? `${lookup.city}, ${lookup.stateAbbreviation}` : ''
     return {...job, location}
   })
@@ -38,5 +39,14 @@ router.get('/jobs', async (req, res) => {
       res.status(500).json({ err, error: true });
   }
 });
+
+router.get('/pricing', async (req, res) => {
+  try {
+    const compData = await Compensation.findAll({raw: true})
+    res.render('pricing', {compData})  } 
+    catch (error) {
+    
+  }
+})
 
 module.exports = router

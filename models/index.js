@@ -1,6 +1,6 @@
 const User = require('./User');
 const Job = require('./Job');
-const Compensation = require('./Job');
+const Compensation = require('./Compensation');
 
 // A Job belongs to a Customer
 Job.belongsTo(User, {
