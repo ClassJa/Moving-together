@@ -2,8 +2,8 @@ console.log("Hi")
 const loginHandler = async (event) => {
     event.preventDefault();
 
-    const email = document.querySelector('#email').value.trim();
-    const password = document.querySelector('#password').value.trim();
+    const email = document.querySelector('#ret-email').value.trim();
+    const password = document.querySelector('#ret-password').value.trim();
 
     if (email && password) {
         const response = await fetch('/api/users/login', {
@@ -23,6 +23,8 @@ const loginHandler = async (event) => {
 // document.querySelector('.login').addEventListener('submit', loginHandler);
 document.querySelector('.sign-in').addEventListener('submit', {
 // form with class of sign in 
-  loginHandler
+
+
+  // loginHandler
 });
 
