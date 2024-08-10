@@ -1,0 +1,35 @@
+[
+  {
+    "job_id": 1,
+    "job_type": "load",
+    "worker_id": 1,
+    "number_workers": 1,
+    "cost_per_worker": 100,
+    "zipcode": 12345,
+    "customer_id": 1,
+    "job_status": true,
+    "payment_status": true
+  },
+  {
+    "job_id": 2,
+    "job_type": "unload",
+    "worker_id": 2,
+    "number_workers": 1,
+    "cost_per_worker": 100,
+    "zipcode": 54321,
+    "customer_id": 1,
+    "job_status": true,
+    "payment_status": true 
+  },
+  {
+    "job_id": 3,
+    "job_type": "load",
+    "worker_id": 3,
+    "number_workers": 1,
+    "cost_per_worker": 1500,
+    "zipcode": 77777,
+    "customer_id": 1,
+    "job_status": true,
+    "payment_status": true
+  }
+]
