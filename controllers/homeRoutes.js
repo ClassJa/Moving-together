@@ -57,4 +57,8 @@ router.get('/signup', async (req, res) => {
   res.render('signup');
 })
 
+router.get('/welcome-back', async (req, res) => {
+  res.render('welcome-back')
+})
+
 module.exports = router

@@ -20,6 +20,17 @@ const { User } = require('../../models');
 //   }
 // });
 
+
+router.get('/welcome-back', async (res, req) => {
+    try {
+        // const loginPage = await 
+        res.render('welcome-back')
+    }
+    catch(e) {
+        res.status(400).json(e)
+    }
+})
+
 // If a POST request is made to /api/users/login, the function checks to see if the user information matches the information in the database and logs the user in. If correct, the user ID and logged-in state are saved to the session within the request object.
 router.post('/login', async (req, res) => {
   try {
@@ -45,7 +56,9 @@ router.post('/login', async (req, res) => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
       
-      res.json({ user: userData, message: 'You are now logged in!' });
+    //   res.render('/welcome-back')
+    //   {{loggedUser}}
+    //   res.json({ user: userData, message: 'You are now logged in!' });
     });
 
   } catch (err) {

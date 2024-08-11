@@ -248,7 +248,7 @@
     display: flex;
     justify-content: flex-start;
     margin: 10px;
-    position: absolute;
+    /* position: absolute; */
     /* left: 0px; */
     bottom: 0px;
 }
@@ -393,6 +393,16 @@
 
 }
 
+.classBtn {
+    color: black;
+    font-weight: 200;
+}
+
+.jobBtn {
+    color: black;
+    font-weight: 200;
+}
+
 #email {
     display: flex;
     width: 200px;
@@ -419,4 +429,9 @@
     width: 200px;
     border-radius: 2px;
     margin-bottom: 2px;
+}
+
+@media screen {
+    /* max-width: ; */
+    
 }

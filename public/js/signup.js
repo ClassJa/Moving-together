@@ -14,6 +14,7 @@ const loginHandler = async (event) => {
     
         if (response.ok) {
           document.location.replace('/');
+          res.render('/welcome-back')
         } else {
           alert('Failed to log in');
         }
@@ -24,5 +25,6 @@ const loginHandler = async (event) => {
 document.querySelector('.sign-up').addEventListener('submit', {
 // form with class of sign in 
   loginHandler
+  
 });
 

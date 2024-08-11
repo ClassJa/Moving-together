@@ -13,7 +13,7 @@ const loginHandler = async (event) => {
         });
     
         if (response.ok) {
-          document.location.replace('/');
+          document.location.replace('/welcome-back');
         } else {
           alert('Failed to log in');
         }
@@ -21,10 +21,5 @@ const loginHandler = async (event) => {
 };
 
 // document.querySelector('.login').addEventListener('submit', loginHandler);
-document.querySelector('.sign-in').addEventListener('submit', {
-// form with class of sign in 
-
-
-  // loginHandler
-});
+document.querySelector('.form-format').addEventListener('submit', loginHandler);
 
