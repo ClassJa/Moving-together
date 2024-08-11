@@ -31,8 +31,8 @@ Compensation.init(
       allowNull: false,
   },
   payment_status: {
-          type: DataTypes.BOOLEAN,
-      allowNull: false,
+    type: DataTypes.BOOLEAN,
+    // removed allow null false
   },
   },
   {
