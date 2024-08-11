@@ -31,6 +31,24 @@
     left: 30%;
 }
 
+.create-job-format {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+    margin: 5px;
+    margin-left: 25%;
+    margin-top: 2%;
+    border: 1px solid black;
+    align-items: center;
+    position:inherit;
+    top: 30px;
+    left: 40%;
+    border-radius: 5px;
+}
+
+
 
 
 .tabs {
