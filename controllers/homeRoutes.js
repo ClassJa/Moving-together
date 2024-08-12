@@ -47,6 +47,9 @@ router.get('/pricing', async (req, res) => {
     catch (error) {
     
   }
+
+});
+
 // add conditional if user is logged in
 router.get('/login', async (req, res) => {
   res.render('login');
