@@ -1,6 +1,7 @@
 const Testimonial = require('../models/Testimonials');
 const Job = require('../models/Job')
 const {Compensation} = require('../models')
+const User = require('../models/User')
 
 const router = require('express').Router();
 const {
@@ -49,7 +50,13 @@ router.get('/pricing', async (req, res) => {
   }
 // add conditional if user is logged in
 router.get('/login', async (req, res) => {
-  res.render('login');
+  try {
+    res.render('login')
+  }
+  catch(e) {
+    res.status(404).json(e)
+  }
+ 
 })
 
 // add conditional if user is logged in
@@ -57,8 +64,11 @@ router.get('/signup', async (req, res) => {
   res.render('signup');
 })
 
-router.get('/welcome-back', async (req, res) => {
-  res.render('welcome-back')
+router.get('/welcomeBack', async (req, res) => {
+  const userInfo = await User.findOne({where: {
+    user_id: req.body.user_id 
+  }})
+  res.render('welcomeBack', userInfo)
 })
 })
 

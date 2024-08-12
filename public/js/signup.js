@@ -14,7 +14,7 @@
     
 //         if (response.ok) {
 //           document.location.replace('/');
-//           res.render('/welcome-back')
+//           res.render('/welcomeBack')
 //         } else {
 //           alert('Failed to log in');
 //         }

@@ -1,4 +1,3 @@
-console.log("Hi")
 const loginHandler = async (event) => {
     event.preventDefault();
 
@@ -13,7 +12,7 @@ const loginHandler = async (event) => {
         });
     
         if (response.ok) {
-          document.location.replace('/welcome-back');
+          document.location.replace('/welcomeBack');
         } else {
           alert('Failed to log in');
         }

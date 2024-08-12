@@ -1,12 +1,14 @@
 const router = require("express").Router();
 
+// const { response } = require("express");
 // Import the User model from the models folder
-const { User } = require('../../models');
+// const { User } = require('../../models');
 
-router.get('/welcome-back', async (res, req) => {
+router.get('/', async (res, req) => {
     try {
-        // const loginPage = await 
-        res.render('welcome-back')
+        if (logingUserData) {
+          res.prependListener('login')
+        }
     }
     catch(e) {
         res.status(400).json(e)
@@ -14,7 +16,7 @@ router.get('/welcome-back', async (res, req) => {
 })
 
 // If a POST request is made to /api/users/login, the function checks to see if the user information matches the information in the database and logs the user in. If correct, the user ID and logged-in state are saved to the session within the request object.
-router.post('/login', async (req, res) => {
+router.post('/', async (req, res) => {
   try {
     const userData = await User.findOne({ where: { email: req.body.email } });
 
@@ -38,7 +40,7 @@ router.post('/login', async (req, res) => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
       
-    //   res.render('/welcome-back')
+    //   res.render('/welcomeBack')
     //   {{loggedUser}}
     //   res.json({ user: userData, message: 'You are now logged in!' });
     });
@@ -47,6 +49,10 @@ router.post('/login', async (req, res) => {
     res.status(400).json(err);
   }
 });
+
+router.get('/welcomeBack', (req, res) => {
+  // if ()
+})
 
 // If a POST request is made to /api/users/logout, the function checks the logged_in state in the request.session object and destroys that session if logged_in is true.
 router.post('/logout', (req, res) => {
