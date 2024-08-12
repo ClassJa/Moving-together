@@ -23,7 +23,7 @@
     "last_name": "Lavagirl",
     "email": "jorge@hotmail.com",
     "zipcode": 77777,
-    "worker": true,
+    "worker": false,
     "password": "password77777"
   }
 ]
