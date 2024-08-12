@@ -14,5 +14,6 @@ router.use('/projects', projectRoutes);
 router.use('/testimonials', testimonialRoutes)
 router.use('/login', signInRoutes);
 router.use('/pricing', pricingRoutes);
+router.use('/welcome-back', signInRoutes)
 
 module.exports = router;

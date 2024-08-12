@@ -12,6 +12,10 @@
     /* How to have it load sequentially? */
 }
 
+.dpos {
+    display: flex;
+}
+
 .form-format {
     display: flex;
     flex-direction: column;
@@ -60,10 +64,12 @@
 .sign-in:hover {
     color: rgb(180, 180, 180);
     background-color: black;
+    cursor: pointer;
 }
 
 .sign-up:hover {
     background-color: rgb(180, 180, 180);
+    cursor: pointer;
 }
 
 .sign-up {
@@ -102,6 +108,21 @@
 .sMoving:active {
     color: rgb(163, 161, 161);
     transition-duration: .115s;
+    font-weight: 100;
+}
+
+.stMv {
+    color: black;
+}
+
+.stMv:hover {
+    color: rgb(163, 161, 161);
+    transition-duration: .115s;
+    font-weight: 100;
+}
+
+.stMv:active {
+    /* color: rgb(163, 161, 161); */
 }
 
 
