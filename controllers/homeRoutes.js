@@ -48,6 +48,7 @@ router.get('/pricing', async (req, res) => {
     catch (error) {
     
   }
+})
 // add conditional if user is logged in
 router.get('/login', async (req, res) => {
   try {
@@ -69,7 +70,6 @@ router.get('/welcomeBack', async (req, res) => {
     user_id: req.body.user_id 
   }})
   res.render('welcomeBack', userInfo)
-})
 })
 
 module.exports = router

@@ -2,7 +2,7 @@ const router = require("express").Router();
 
 // const { response } = require("express");
 // Import the User model from the models folder
-// const { User } = require('../../models');
+const { User } = require('../models');
 
 router.get('/', async (res, req) => {
     try {
@@ -50,8 +50,16 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.get('/welcomeBack', (req, res) => {
-  // if ()
+router.get('/welcomeBack', async (req, res) => {
+  const userInfo = await User.findOne({
+    where: {
+    id: res.body.user_id
+  }
+})
+if (!userInfo) {
+  res.status(400).json("Invalid User")
+}
+res.json(userInfo)
 })
 
 // If a POST request is made to /api/users/logout, the function checks the logged_in state in the request.session object and destroys that session if logged_in is true.
