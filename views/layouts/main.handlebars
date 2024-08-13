@@ -23,8 +23,17 @@
             <li class="tabs-title is-active"><a id="pricingLink" class="clear-bg" href="/pricing" aria-selected="true">Pricing</a></li>
             <li class="tabs-title is-active"><a class="clear-bg" href="#panel5" aria-selected="true">Contact</a></li>
             <li class="tabs-title is-active"><a class="clear-bg" href="/" aria-selected="true">Home</a></li>
+            {{#if logged_in}}
             <a class="dpos" href="/login"> <button class="begin-btn sign-in">Sign In</button> </a>
             <a class="dpos" href="/signup"> <button class="begin-btn sign-up">Register</button> </a>
+            {{/if}}
+            {{#unless logged_in}}
+            <a class="dpos" href="/"> <button class="begin-btn sign-in">Sign Out</button> </a>
+            {{/unless}}
+            
+            
+            
+            
       </ul>
     </header>
     <main>
