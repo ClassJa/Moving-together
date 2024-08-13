@@ -9,8 +9,8 @@ const seedDatabase = async () => {
     await sequelize.sync({ force: true }); // Sync the models with the database and drop existing tables
 
     // seed Users
-    const users = await User.bulkCreate(userData);
-    console.log('Users seeded successfully');
+    const users = await User.bulkCreate(userData, { individualHooks: true });
+    console.log('Users seeded successfully', users);
 
     // ... Jobs
     const jobs = await Job.bulkCreate(jobData);

@@ -4,6 +4,6 @@ const {
   } = require ('zipcode-detail-lookup');
 
 
-  const zip = 19019;
+  const zip = 98105
   input = zip.toString();
-  console.log(lookupZip(zip.toString()));
+  console.log(lookupZip(input.toString()));

@@ -13,7 +13,7 @@ router.get('/', async (req, res) => {
   try {
 
   const tData = await Testimonial.findAll({raw: true})
-    res.render('homepage', {tData})
+    res.render('homepage', {tData, worker: req.session.is_worker, logged_in: req.session.logged_in})
   
     
   } catch (err) {
