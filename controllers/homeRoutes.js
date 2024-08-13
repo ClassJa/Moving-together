@@ -47,7 +47,9 @@ router.get('/pricing', async (req, res) => {
     catch (error) {
     
   }
-});  
+});
+
+
 // add conditional if user is logged in
 router.get('/login', async (req, res) => {
   res.render('login');
@@ -58,4 +60,8 @@ router.get('/signup', async (req, res) => {
   res.render('signup');
 });
 
-module.exports = router;
+router.get('/createjob', async (req, res) => {
+  res.render('createjob');
+})
+
+module.exports = router

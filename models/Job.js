@@ -44,12 +44,13 @@ Job.init(
     },
   },
   job_status: {
-    type: DataTypes.BOOLEAN
     // got rid of allow null false
+    type: DataTypes.BOOLEAN,
+    defaultValue: false
   },
   payment_status: {
-    type: DataTypes.BOOLEAN
-    // got rid of allow null false
+    type: DataTypes.BOOLEAN,
+    defaultValue: false
   },
 },
 {

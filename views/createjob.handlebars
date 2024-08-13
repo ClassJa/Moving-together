@@ -1,0 +1,51 @@
+<form class="create-job-format">
+  <h2 class="welcome-greeting">Book Your Job Now!</h2>
+  <label for="jobType">Select Job Type:
+    <select id="jobType">
+        <option value=""></option>
+      <option value="loadOnly">Load Only</option>
+      <option value="unloadOnly">Unload Only</option>
+      <option value="fullMove">Load and Unload</option>
+    </select>
+  </label>
+
+  <div id="loadOnly" style="display: none">
+    <label for="zipcodeLoad">What is the Zip Code of the <strong>load</strong>?</label>
+    <input type="text" id="zipcodeLoad" name="zipcodeLoad">
+    <label for="numberWorkersLoad">How many movers do you need for the <strong>load</strong>?</label>
+    <input type="text" id="numberWorkersLoad" name="numberWorkersLoad">
+    <label for="rateWorkersLoad">How much will you pay per worker for the <strong>load</strong>?</label>
+    <input type="text" id="rateWorkersLoad" name="rateWorkersLoad">
+  </div>
+
+  <div id="unloadOnly" style="display: none">
+    <label for="zipcodeUnload">What is the Zip Code of the <strong>unload</strong>?</label>
+    <input type="text" id="zipcodeUnload" name="zipcodeUnload">
+    <label for="numberWorkersUnload">How many movers do you need for the <strong>unload</strong>?</label>
+    <input type="text" id="numberWorkersUnload" name="numberWorkersUnload">
+    <label for="rateWorkersUnload">How much will you pay per worker for the <strong>unload</strong>?</label>
+    <input type="text" id="rateWorkersUnload" name="rateWorkersUnload">
+  </div>
+
+
+  <div id="fullMove" style="display: none">
+    <label for="zipcodeLoad">What is the Zip Code of the <strong>load</strong>?</label>
+    <input type="text" id="zipcodeLoad" name="zipcodeLoad">
+    <label for="numberWorkersLoad">How many movers do you need for the <strong>load</strong>?</label>
+    <input type="text" id="numberWorkersLoad" name="numberWorkersLoad">
+    <label for="rateWorkersLoad">How much will you pay per worker for the <strong>load</strong>?</label>
+    <input type="text" id="rateWorkersLoad" name="rateWorkersLoad">
+
+    <label for="zipcodeUnload">What is the Zip Code of the <strong>unload</strong>?</label>
+    <input type="text" id="zipcodeUnload" name="zipcodeUnload">
+    <label for="numberWorkersUnload">How many movers do you need for the <strong>unload</strong>?</label>
+    <input type="text" id="numberWorkersUnload" name="numberWorkersUnload">
+    <label for="rateWorkersUnload">How much will you pay per worker for the <strong>unload</strong>?</label>
+    <input type="text" id="rateWorkersUnload" name="rateWorkersUnload">
+  </div>
+  
+  <button class="submit success button" type="submit">Submit</button>
+
+</form>
+
+<script src="/js/createjob.js"></script>
