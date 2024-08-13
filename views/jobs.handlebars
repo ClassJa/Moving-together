@@ -3,7 +3,7 @@
   <section class="testimonial">
     <section class="testimonial-ind">
       <h3>
-        {{location}}
+        Zipcode: {{zipcode}}
       </h3>
       <h4>
         {{#unless job_status}}
@@ -12,7 +12,7 @@
       <p>
         At a Rate: ${{cost_per_worker}}/hour
       </p>
-      <button id= "signUp" class="submit success button">Sign Up!</button>
+      <button data-id="{{job_id}}" class="jobSignUpBtn submit success button">Sign Up!</button>
       {{else}}
       <p>Job filled</p>
       {{/unless}}
