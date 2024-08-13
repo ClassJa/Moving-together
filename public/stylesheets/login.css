@@ -12,6 +12,10 @@
     /* How to have it load sequentially? */
 }
 
+.dpos {
+    display: flex;
+}
+
 .form-format {
     display: flex;
     flex-direction: column;
@@ -78,10 +82,12 @@
 .sign-in:hover {
     color: rgb(180, 180, 180);
     background-color: black;
+    cursor: pointer;
 }
 
 .sign-up:hover {
     background-color: rgb(180, 180, 180);
+    cursor: pointer;
 }
 
 .sign-up {
@@ -120,6 +126,21 @@
 .sMoving:active {
     color: rgb(163, 161, 161);
     transition-duration: .115s;
+    font-weight: 100;
+}
+
+.stMv {
+    color: black;
+}
+
+.stMv:hover {
+    color: rgb(163, 161, 161);
+    transition-duration: .115s;
+    font-weight: 100;
+}
+
+.stMv:active {
+    /* color: rgb(163, 161, 161); */
 }
 
 
@@ -204,7 +225,7 @@
     /* word-wrap: wrap; */
     margin-bottom: 3px;
     position: absolute;
-    top: 2%;
+    top: 15%;
     left: 40%;
 }
 
@@ -229,13 +250,13 @@
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     justify-content: center;
-    border: 1px solid black;
+    border: 2px solid #9e844b;
     align-content: center;
     border-radius: 5px;
     padding: 15px;
     background-color: white;
     overflow-x: scroll;
-    word-wrap: wrap; 
+    text-wrap: wrap; 
     position: relative;
     bottom: 0px;
 }
@@ -266,8 +287,8 @@
     display: flex;
     justify-content: flex-start;
     margin: 10px;
-    position: absolute;
-    /* left: 0px; */
+    position: absolute; 
+    left: 0px;
     bottom: 0px;
 }
 
@@ -411,6 +432,16 @@
 
 }
 
+.classBtn {
+    color: black;
+    font-weight: 200;
+}
+
+.jobBtn {
+    color: black;
+    font-weight: 200;
+}
+
 #email {
     display: flex;
     width: 200px;
@@ -437,4 +468,59 @@
     width: 200px;
     border-radius: 2px;
     margin-bottom: 2px;
+}
+
+#wb {
+    display: flex;
+    justify-content: center;
+    color: black;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    border-color: gray;
+}
+
+#fm {
+    background-color: aliceblue;
+    height: 55px;
+    width: 150px;
+    display: flex;
+    align-self: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-right: 5px;
+    border: 1px solid rgb(199, 157, 98);
+    cursor: pointer;
+}
+
+#fj {
+    background-color: aliceblue;
+    height: 55px;
+    width: 150px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid rgb(199, 157, 98);
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+#btns {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    
+}
+
+@media screen {
+    /* max-width: ; */
+    
 }

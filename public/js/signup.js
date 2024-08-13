@@ -1,4 +1,4 @@
-console.log("Hi")
+
 const signupHandler = async (event) => {
     event.preventDefault();
 
@@ -32,4 +32,5 @@ const signupHandler = async (event) => {
 document.querySelector('.sign-up').addEventListener('submit', { 
   signupHandler
 });
+
 
