@@ -34,7 +34,8 @@ function jobSubmit(event) {
     document.querySelector(`#${jobType} #numberWorkersUnload`)?.value || "";
   const rateWorkersUnload =
     document.querySelector(`#${jobType} #rateWorkersUnload`)?.value || "";
-
+console.log(zipcodeLoad)
+console.log(zipcodeUnload)
   const load = {
     job_type: "Load",
     number_workers: numberWorkersLoad,
