@@ -1,17 +1,15 @@
-<h1>Pricing</h1>
+<h1 class="centerText">Pricing of current jobs</h1>
 {{log compData}}
+
 {{#each compData}}
-  <section class="compensation">
-    <section class="compensation-ind">
-      <h3>
-        {{job_id}}
-      </h3>
-      <h4>
-        {{compensation}}
-      </h4>
-      <p>
-        {{payment_status}}
-      </p>
+  <section class="testimonial centerText form-format">
+    <section class="testimonial-ind">
+      <h3 class="" >Job ID: {{job_id}}</h3>
+      <h3 class="" >Pay: ${{compensation}}</h3>
     </section>
   </section>
 {{/each}}
+{{!-- {{log userData}}
+{{#each userData}}
+  <p>Location: {{zipcode}}</p>
+{{/each}}   --}}
