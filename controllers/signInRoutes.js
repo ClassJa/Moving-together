@@ -50,17 +50,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.get('/welcomeBack', async (req, res) => {
-  const userInfo = await User.findOne({
-    where: {
-    id: res.body.user_id
-  }
-})
-if (!userInfo) {
-  res.status(400).json("Invalid User")
-}
-res.json(userInfo)
-})
+
 
 // If a POST request is made to /api/users/logout, the function checks the logged_in state in the request.session object and destroys that session if logged_in is true.
 router.post('/logout', (req, res) => {

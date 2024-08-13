@@ -66,10 +66,25 @@ router.get('/signup', async (req, res) => {
 })
 
 router.get('/welcomeBack', async (req, res) => {
-  const userInfo = await User.findOne({where: {
-    user_id: req.body.user_id 
-  }})
-  res.render('welcomeBack', userInfo)
-})
+    console.log(req.session)
+    console.log(req.session.user_id)
+    const userInfo = await User.findOne({
+      where: {
+      user_id: req.session.user_id
+    },
+    raw: true
+  })
+  if (!userInfo) {
+    res.status(400).json("Invalid User")
+  }
+  res.render('welcomeBack', {userInfo})
+  })
+
+// router.get('/welcomeBack', async (req, res) => {
+//   const userInfo = await User.findOne({where: {
+//     user_id: req.body.user_id 
+//   }})
+//   res.render('welcomeBack', userInfo)
+// })
 
 module.exports = router

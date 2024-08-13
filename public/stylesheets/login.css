@@ -269,8 +269,8 @@
     display: flex;
     justify-content: flex-start;
     margin: 10px;
-    /* position: absolute; */
-    /* left: 0px; */
+    position: absolute; 
+    left: 0px;
     bottom: 0px;
 }
 
@@ -450,6 +450,56 @@
     width: 200px;
     border-radius: 2px;
     margin-bottom: 2px;
+}
+
+#wb {
+    display: flex;
+    justify-content: center;
+    color: black;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    border-color: gray;
+}
+
+#fm {
+    background-color: aliceblue;
+    height: 55px;
+    width: 150px;
+    display: flex;
+    align-self: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-right: 5px;
+    border: 1px solid rgb(199, 157, 98);
+    cursor: pointer;
+}
+
+#fj {
+    background-color: aliceblue;
+    height: 55px;
+    width: 150px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid rgb(199, 157, 98);
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+#btns {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    
 }
 
 @media screen {
