@@ -23,7 +23,7 @@ router.post("/", async (req, res) => {
       ...req.body,
       // user_id: 12345,
     });
-
+    console.log(newJob)
     res.status(200).json(newJob);
   } catch (err) {
     console.log(err)
