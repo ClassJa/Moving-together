@@ -11,8 +11,12 @@
 <body>
      <header>
         <ul class="tabs" data-tabs id="example-tabs">
+            {{#if logged_in}}
             <li class="tabs-title is-active"><a class="clear-bg" href="/createjob" aria-selected="true">Create a Job</a></li>
+            {{/if}}
+            {{#if worker}}
             <li class="tabs-title is-active"><a class="clear-bg" href="/jobs" aria-selected="true">Available Jobs</a></li>
+            {{/if}}
             <li class="tabs-title is-active"><a class="clear-bg" href="#panel1 " aria-selected="true">Solutions</a></li>
             <li class="tabs-title is-active"><a class="clear-bg" href="#panel2" aria-selected="true">Community</a></li>
             <li class="tabs-title is-active"><a class="clear-bg" href="#panel3" aria-selected="true">Resources</a></li>
