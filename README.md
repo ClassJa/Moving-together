@@ -42,11 +42,11 @@ Github profile link: https://github.com/ndoppler
 <br/>
 Email: neildoppler@gmail.com
 <br/><br/>
-Github username: ClassJay 
+Github username: ClassJa 
 <br/>
 Github profile link: https://github.com/ClassJa
 <br/>
-Email: juliathetutor5@gmail.com
+Email: jaua1150@gmail.com
 <br/><br/>
 Github username: lyang90
 <br/>
