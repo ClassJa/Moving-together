@@ -5,7 +5,7 @@
     "worker_id": 1,
     "number_workers": 1,
     "cost_per_worker": 100,
-    "zipcode": 12345,
+    "zipcode": 98105,
     "customer_id": 3,
     "job_status": false,
     "payment_status": false
@@ -16,20 +16,20 @@
     "worker_id": 2,
     "number_workers": 1,
     "cost_per_worker": 100,
-    "zipcode": 54321,
+    "zipcode": 90210,
     "customer_id": 3,
     "job_status": true,
     "payment_status": false 
-  },
-  {
-    "job_id": 3,
-    "job_type": "load",
-    "worker_id": 1,
-    "number_workers": 1,
-    "cost_per_worker": 1500,
-    "zipcode": 77777,
-    "customer_id": 3,
-    "job_status": false,
-    "payment_status": false
   }
+  // {
+  //   "job_id": 3,
+  //   "job_type": "load",
+  //   "worker_id": 1,
+  //   "number_workers": 1,
+  //   "cost_per_worker": 1500,
+  //   "zipcode": 35212,
+  //   "customer_id": 3,
+  //   "job_status": false,
+  //   "payment_status": false
+  // }
 ]
