@@ -12,7 +12,8 @@ Job.init(
     autoIncrement: true,
   },
   job_type: {
-    type: DataTypes.CHAR,
+    // Changed datatype to string as char isn't recognized by sequelize
+    type: DataTypes.STRING,
     allowNull: false,
   },
   worker_id: {
@@ -43,13 +44,12 @@ Job.init(
     },
   },
   job_status: {
+    // got rid of allow null false
     type: DataTypes.BOOLEAN,
-    allowNull: false,
     defaultValue: false
   },
   payment_status: {
     type: DataTypes.BOOLEAN,
-    allowNull: false,
     defaultValue: false
   },
 },

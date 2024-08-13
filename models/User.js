@@ -39,7 +39,7 @@ User.init(
     },
     worker: {
       type: DataTypes.BOOLEAN,
-      allowNull: false,
+      // got rid of allow null false
     },
     password: {
       type: DataTypes.STRING,
