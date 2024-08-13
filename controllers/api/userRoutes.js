@@ -11,7 +11,8 @@ router.post('/', async (req, res) => {
     req.session.save(() => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
-      req.session.is_worker = true;
+      req.session.is_worker = userData.dataValues.worker;
+      req.session.zipcode = userData.dataValues.zipcode;
 
       res.status(200).json(userData);
     });
