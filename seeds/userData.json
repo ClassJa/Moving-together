@@ -4,7 +4,7 @@
     "first_name": "Aliens",
     "last_name": "VSpredator",
     "email": "aliens@hotmail.com",
-    "zipcode": 12345,
+    "zipcode": 90210,
     "worker": true,
     "password": "password12345"
   },
@@ -13,7 +13,7 @@
     "first_name": "Steven",
     "last_name": "Picadilly",
     "email": "silly@hotmail.com",
-    "zipcode": 54321,
+    "zipcode": 98105,
     "worker": true,
     "password": "password54321"
   },
@@ -22,7 +22,7 @@
     "first_name": "Sharkboy",
     "last_name": "Lavagirl",
     "email": "jorge@hotmail.com",
-    "zipcode": 77777,
+    "zipcode": 35212,
     "worker": false,
     "password": "password77777"
   }
