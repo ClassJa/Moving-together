@@ -31,4 +31,26 @@ router.post("/", async (req, res) => {
   }
 });
 
+//starter code for job status change
+router.put('/:id', async (req, res) => {
+  const jobId = req.params.id;
+  const updatedJobData = req.body; 
+
+  try {
+      // update the job in the database using Sequelize
+      const updatedJobs = await Job.update(updatedJobData, {
+          where: { id: jobId }
+      });
+
+      // Retrieve the updated book from the database
+      const updatedJobFromDB = await Job.findByPk(jobId);
+
+      // Send the updated book back to the client
+      res.json(updatedJobFromDB);
+  } catch (error) {
+      console.error(error);
+      res.status(500).json({ error: 'Failed to update job' });
+  }
+});
+
 module.exports = router;

@@ -6,12 +6,16 @@
         {{location}}
       </h3>
       <h4>
+        {{#unless job_status}}
         Number of Workers Needed: {{number_workers}}
       </h4>
       <p>
         At a Rate: ${{cost_per_worker}}/hour
       </p>
-      <button class="submit success button">Sign Up!</button>
+      <button id= "signUp" class="submit success button">Sign Up!</button>
+      {{else}}
+      <p>Job filled</p>
+      {{/unless}}
     </section>
   </section>
 {{/each}}
