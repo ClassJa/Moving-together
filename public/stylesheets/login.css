@@ -520,3 +520,12 @@ footer {
     /* max-width: ; */
     
 }
+
+.centerText {
+    text-align: center;
+}
+
+.centerRow {
+  display: flex;
+  align-content: center;
+}

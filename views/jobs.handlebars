@@ -1,21 +1,23 @@
 {{log configJobData}}
 {{#each configJobData}}
-  <section class="testimonial">
+  <section class="testimonial centerText form-format">
     <section class="testimonial-ind">
-      <h3>
+      <h3 class=" h3-spacing ">
         Zipcode: {{zipcode}}
       </h3>
       <h4>
         {{#unless job_status}}
         Number of Workers Needed: {{number_workers}}
       </h4>
-      <p>
+      <p class=" p-text-content ">
         At a Rate: ${{cost_per_worker}}/hour
       </p>
       <button data-id="{{job_id}}" class="jobSignUpBtn submit success button">Sign Up!</button>
       {{else}}
-      <p>Job filled</p>
+      <p class=" p-text-content ">Job filled</p>
       {{/unless}}
     </section>
   </section>
 {{/each}}
+
+<script src="/public/js/acceptjob.js"></script>
