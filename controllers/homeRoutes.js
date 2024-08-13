@@ -13,7 +13,7 @@ router.get('/', async (req, res) => {
   try {
 
   const tData = await Testimonial.findAll({raw: true})
-    res.render('homepage', {tData})
+    res.render('homepage', {tData, worker: req.session.is_worker, logged_in: req.session.logged_in})
   
     
   } catch (err) {
@@ -50,8 +50,10 @@ router.get('/pricing', async (req, res) => {
   }
 });
 
+
 // add conditional if user is logged in
 router.get('/login', async (req, res) => {
+
   try {
     res.render('login')
   }
@@ -59,12 +61,12 @@ router.get('/login', async (req, res) => {
     res.status(404).json(e)
   }
  
-})
+});
 
 // add conditional if user is logged in
 router.get('/signup', async (req, res) => {
   res.render('signup');
-})
+});
 
 router.get('/welcomeBack', async (req, res) => {
     console.log(req.session)
@@ -90,6 +92,5 @@ router.get('/welcomeBack', async (req, res) => {
 router.get('/createjob', async (req, res) => {
   res.render('createjob');
 })
-
 
 module.exports = router
