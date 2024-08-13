@@ -1,4 +1,4 @@
-
+/* TODO: Stylize to my heart's content on how I want it too look */
 * {
     font-family:Georgia, 'Times New Roman', Times, serif
 }
@@ -10,10 +10,6 @@
 
 .main-img {
     /* How to have it load sequentially? */
-}
-
-.dpos {
-    display: flex;
 }
 
 .form-format {
@@ -34,24 +30,6 @@
     /* top: 60%; */
     left: 30%;
 }
-
-.create-job-format {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-    height: 50%;
-    margin: 5px;
-    margin-left: 25%;
-    margin-top: 2%;
-    border: 1px solid black;
-    align-items: center;
-    position:inherit;
-    top: 30px;
-    left: 40%;
-    border-radius: 5px;
-}
-
 
 
 
@@ -82,12 +60,10 @@
 .sign-in:hover {
     color: rgb(180, 180, 180);
     background-color: black;
-    cursor: pointer;
 }
 
 .sign-up:hover {
     background-color: rgb(180, 180, 180);
-    cursor: pointer;
 }
 
 .sign-up {
@@ -126,21 +102,6 @@
 .sMoving:active {
     color: rgb(163, 161, 161);
     transition-duration: .115s;
-    font-weight: 100;
-}
-
-.stMv {
-    color: black;
-}
-
-.stMv:hover {
-    color: rgb(163, 161, 161);
-    transition-duration: .115s;
-    font-weight: 100;
-}
-
-.stMv:active {
-    /* color: rgb(163, 161, 161); */
 }
 
 
@@ -225,7 +186,7 @@
     /* word-wrap: wrap; */
     margin-bottom: 3px;
     position: absolute;
-    top: 15%;
+    top: 2%;
     left: 40%;
 }
 
@@ -250,13 +211,13 @@
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     justify-content: center;
-    border: 2px solid #9e844b;
+    border: 1px solid black;
     align-content: center;
     border-radius: 5px;
     padding: 15px;
     background-color: white;
     overflow-x: scroll;
-    text-wrap: wrap; 
+    word-wrap: wrap; 
     position: relative;
     bottom: 0px;
 }
@@ -285,18 +246,15 @@
 
 .footer-link-positions {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     margin: 10px;
-    position: absolute; 
-    left: 0px;
+    position: absolute;
     bottom: 0px;
 }
 
 .footer-links {
     margin-right: 10px;
     color: rgb(102, 102, 103);
-    /* position: absolute;
-    bottom: 0px; */
 }
 
 .sMoving {
@@ -428,99 +386,22 @@
     width: 100px;
     background-color: white;
     border-radius: 5px;
+    padding-bottom: 3px;
 
-
-}
-
-.classBtn {
-    color: black;
-    font-weight: 200;
-}
-
-.jobBtn {
-    color: black;
-    font-weight: 200;
 }
 
 #email {
     display: flex;
     width: 200px;
     justify-self: center;
-    border-radius: 2px;
+    border-radius: 5px;
     margin-bottom: 2px;
+
 }
 
 #password {
     width: 200px;
-    border-radius: 2px;
+    border-radius: 5px;
     margin-bottom: 2px;
 }
 
-#ret-email {
-    display: flex;
-    width: 200px;
-    justify-self: center;
-    border-radius: 2px;
-    margin-bottom: 2px;
-}
-
-#ret-password {
-    width: 200px;
-    border-radius: 2px;
-    margin-bottom: 2px;
-}
-
-#wb {
-    display: flex;
-    justify-content: center;
-    color: black;
-    height: auto;
-    width: auto;
-    justify-content: center;
-    border-color: gray;
-}
-
-#fm {
-    background-color: aliceblue;
-    height: 55px;
-    width: 150px;
-    display: flex;
-    align-self: center;
-    justify-items: center;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    margin-right: 5px;
-    border: 1px solid rgb(199, 157, 98);
-    cursor: pointer;
-}
-
-#fj {
-    background-color: aliceblue;
-    height: 55px;
-    width: 150px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-content: center;
-    border: 1px solid rgb(199, 157, 98);
-    flex-wrap: wrap;
-    cursor: pointer;
-}
-
-#btns {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    position: absolute;
-    top: 40%;
-    left: 40%;
-    
-}
-
-@media screen {
-    /* max-width: ; */
-    
-}
