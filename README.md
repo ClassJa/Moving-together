@@ -4,8 +4,10 @@
 ## Description
 Moving together is a crowd source moving application. This app was generated for those who want some help with moving but want to keep it casual. Upon sign-up, users can designate whether they're a customer or a worker. As a customer, you can create jobs. Do note that you designate the price you're willing to pay. As a worker, you can accept jobs and will be compensated by the given customer based on the job post.
 
-## Deployed app link
-https://moving-together.onrender.com/
+## Deployed app and presentation link
+App: https://moving-together.onrender.com/
+<br/>
+Presentation: https://docs.google.com/presentation/d/1mR7W8IcTvm35dVkhFz3fHqeeJDDRI-Kh7bFVannbgwQ/edit#slide=id.g110761692bd_0_2845
 
 ## Table of contents
 - [Installation](#installation)
@@ -54,5 +56,11 @@ Github profile link: https://github.com/lyang90
 <br/>
 Email: lyang7305@gmail.com
 
-
+## Screenshots
+![alt text](<public/asset/Screenshot 2024-08-13 at 8.45.57 PM.png>)
+![alt text](<public/asset/Screenshot 2024-08-13 at 8.46.05 PM.png>)
+![alt text](<public/asset/Screenshot 2024-08-13 at 8.45.42 PM.png>)
+![alt text](<public/asset/Screenshot 2024-08-13 at 8.46.15 PM.png>)
+<br/><br/>
 [Back to top](#Moving-together)
+
