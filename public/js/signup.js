@@ -15,7 +15,7 @@ const signupHandler = async (event) => {
           body: JSON.stringify({ email, password, first_name:f_name, last_name:l_name, zipcode: z_code, worker: is_worker }),
           headers: { 'Content-Type': 'application/json' },
         });
-    
+
         if (response.ok) {
           if(is_worker){
             document.location.replace('/jobs');
@@ -32,5 +32,6 @@ const signupHandler = async (event) => {
 document.querySelector('#sign-up').addEventListener('submit', 
   signupHandler
 );
+
 
 
