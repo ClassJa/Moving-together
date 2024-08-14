@@ -610,39 +610,3 @@ footer {
 
 }
 
-/*Fixed background images*/
-.main-img{
-}
-
-.stock-img-centered{
-    width: 100%;
-}
-
-.image-half{
-    margin-top: 10px;
-    background-color: black;
-    width: 50%;
-    height: 500px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    margin: 20px;
-}
-
-#back-image-1{
-    background-image: url(../asset/stock-img2.jpg);
-}
-
-#back-image-2{
-    background-image: url(../asset/stock-img5.png);
-    
-}
-
-.centerText {
-    text-align: center;
-}
-
-.centerRow {
-  display: flex;
-  align-content: center;
-}
