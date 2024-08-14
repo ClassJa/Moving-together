@@ -13,6 +13,7 @@ router.get('/', async (req, res) => {
   try {
 
   const tData = await Testimonial.findAll({raw: true})
+  console.log(req.session)
     res.render('homepage', {tData, worker: req.session.is_worker, logged_in: req.session.logged_in})
   
     
@@ -80,7 +81,7 @@ router.get('/welcomeBack', async (req, res) => {
   if (!userInfo) {
     res.status(400).json("Invalid User")
   }
-  res.render('welcomeBack', {userInfo})
+  res.render('welcomeBack', {userInfo, logged_in: req.session.logged_in})
   })
 
 // router.get('/welcomeBack', async (req, res) => {
