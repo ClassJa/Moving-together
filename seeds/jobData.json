@@ -20,16 +20,16 @@
     "customer_id": 3,
     "job_status": true,
     "payment_status": false 
+  },
+  {
+    "job_id": 3,
+    "job_type": "load",
+    "worker_id": 1,
+    "number_workers": 1,
+    "cost_per_worker": 1500,
+    "zipcode": 35212,
+    "customer_id": 3,
+    "job_status": false,
+    "payment_status": false
   }
-  // {
-  //   "job_id": 3,
-  //   "job_type": "load",
-  //   "worker_id": 1,
-  //   "number_workers": 1,
-  //   "cost_per_worker": 1500,
-  //   "zipcode": 35212,
-  //   "customer_id": 3,
-  //   "job_status": false,
-  //   "payment_status": false
-  // }
 ]
