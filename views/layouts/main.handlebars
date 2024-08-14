@@ -19,15 +19,15 @@
             <li class="tabs-title is-active"><a class="clear-bg" href="/jobs" aria-selected="true">Available Jobs</a></li>
             {{/if}}
             
+            {{log logged_in}}
             <li class="tabs-title is-active"><a class="clear-bg" href="/" aria-selected="true">Home</a></li>
             <li class="tabs-title is-active"><a id="pricingLink" class="clear-bg" href="/pricing" aria-selected="true">Pricing</a></li>
             {{#if logged_in}}
+             <a class="dpos" href="/"> <button id="logout" class="begin-btn sign-in">Sign Out</button> </a>
+            {{else}}
             <a class="dpos" href="/login"> <button class="begin-btn sign-in">Sign In</button> </a>
             <a class="dpos" href="/signup"> <button class="begin-btn sign-up">Register</button> </a>
             {{/if}}
-            {{#unless logged_in}}
-            <a class="dpos" href="/"> <button class="begin-btn sign-in">Sign Out</button> </a>
-            {{/unless}}
             
             
             
@@ -56,6 +56,7 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+    <script src="/js/logout.js"></script>
 
 </body>
 </html>

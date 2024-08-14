@@ -14,6 +14,7 @@ const PORT = process.env.PORT || 3001;
 const hbs = exphbs.create({  });
 
 const sess = {
+  // replace with .env
   secret: 'Super secret secret',
   cookie: {},
   resave: false,
